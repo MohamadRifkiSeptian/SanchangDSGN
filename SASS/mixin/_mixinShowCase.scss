@@ -1,0 +1,61 @@
+@mixin kiriKanan{
+  display: grid;
+  gap: 40px;
+  justify-content: space-between;
+}
+@mixin sizingBoxs{
+  height: 440px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.11);
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+@mixin imgSize{
+  img{
+    width: 100%;
+    position: absolute;
+  }
+}
+
+@mixin sizePanjangKotak{
+  @include kiriKanan();
+  .panjang{
+    @include sizingBoxs();
+    @include imgSize();
+  }
+  .kotak{
+    @include sizingBoxs();
+    @include imgSize();
+  }
+}
+
+@mixin control-responsiv($width: 90vw, $gap: 10px, $mHeight: 150px){
+  #main{
+    .logo{
+      width: $width;
+      gap: $gap;
+      padding: 0px;
+      .kiri{
+        gap: $gap;
+        .panjang{
+          max-height: $mHeight;
+        }
+        .kotak{
+          max-height: $mHeight;
+        }
+      }
+      .kanan{
+        gap: $gap;
+        .panjang{
+          max-height: $mHeight;
+        }
+        .kotak{
+          max-height: $mHeight;
+        }
+      }
+    }
+  }
+}

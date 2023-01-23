@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+input, textarea{
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+}
+input:active,
+input:focus {
+outline: none;
+}
+body{
+  height: 200vh;
+}

@@ -1,0 +1,34 @@
+footer{
+  background-color: #101010;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  img{
+    height: 30px;
+  }
+  .link{
+    display: flex;
+    justify-content: center;
+    .imgs{
+      padding: 10px;
+    }
+  }
+  h6{
+    font-weight: 100;
+    font-size: 14px;
+    a{
+      color: #129D69;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  footer{
+    img{
+      height: 30px;
+    }
+  }
+}
